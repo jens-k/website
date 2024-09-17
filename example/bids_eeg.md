@@ -68,6 +68,7 @@ for subindx=1:numel(sub)
   % these are EEG specific
   cfg.eeg.PowerLineFrequency = 60;   % since recorded in the USA
   cfg.eeg.EEGReference       = 'M1'; % actually I do not know, but let's assume it was left mastoid
+  cfg.eeg.SoftwareFilters    = 'n/a'; % can contain information about any applied filters
 
   data2bids(cfg);
 
